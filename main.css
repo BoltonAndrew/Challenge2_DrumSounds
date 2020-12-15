@@ -1,0 +1,43 @@
+body {
+    background-image: url("./assets/drums.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+#heading {
+    text-align: center;
+    font-size: 125px;
+    color: red;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 75px;
+    margin-top: 15px;
+    color: red;
+}
+
+#buttonrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategray;
+    border-radius: 4px;
+    width: 75px;
+    height: 75px;
+    
+}
+
+.letter {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.drumName {
+    text-align: center;
+}
