@@ -2,12 +2,17 @@ body {
     background-image: url("./assets/drums.jpg");
     display: flex;
     flex-direction: column;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
 }
 
-#heading {
-    text-align: center;
-    font-size: 125px;
-    color: red;
+path {
+    fill: transparent;
+}
+  
+text {
+    fill: red;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 #subtitle {
@@ -15,29 +20,38 @@ body {
     font-size: 75px;
     margin-top: 15px;
     color: red;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    position: relative;
+    bottom: 1000px;
 }
 
 #buttonrow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+    bottom: 1000px;
 }
 
 .button {
     display: flex;
     flex-direction: column;
-    background-color: lightslategray;
-    border-radius: 4px;
-    width: 75px;
-    height: 75px;
-    
+    background-image: url("./assets/Key.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
 }
 
 .letter {
     text-align: center;
     margin-bottom: 0;
+    position: relative;
+    top: 10px;
 }
 
 .drumName {
     text-align: center;
+    margin: 20px 30px 20px;
+    color: red;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }

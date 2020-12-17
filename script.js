@@ -1,31 +1,12 @@
-const boom = document.getElementById("boom");
-const clap = document.getElementById("clap");
-const hihat = document.getElementById("hihat");
-const kick = document.getElementById("kick");
-const openhat = document.getElementById("openhat");
-const ride = document.getElementById("ride");
-const snare = document.getElementById("snare");
-const tink = document.getElementById("tink");
-const tom = document.getElementById("tom");
+const drums = {
+soundsArr: [document.getElementById("clap"), document.getElementById("hihat"), document.getElementById("kick"), document.getElementById("openhat"), document.getElementById("boom"), document.getElementById("ride"), document.getElementById("snare"), document.getElementById("tom"), document.getElementById("tink")],
+keyArr: ["a", "s", "d", "f", "g", "h", "j", "k", "l"],
+sounds: function(letter) {
+    let x = this.keyArr.indexOf(letter);
+    this.soundsArr[x].play();
+}
+};
 
 document.addEventListener("keydown", (x) => {
-    if (x.key === "a") {
-        clap.play();
-    } else if (x.key === "s") {
-        hihat.play();
-    } else if (x.key === "d") {
-        kick.play();
-    } else if (x.key === "f") {
-        openhat.play();
-    } else if (x.key === "g") {
-        boom.play();
-    } else if (x.key === "h") {
-        ride.play();
-    } else if (x.key === "j") {
-        snare.play();
-    } else if (x.key === "k") {
-        tom.play();
-    } else if (x.key === "l") {
-        tink.play();
-    }
+    drums.sounds(x.key);
 })
